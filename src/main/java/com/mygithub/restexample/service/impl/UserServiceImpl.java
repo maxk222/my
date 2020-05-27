@@ -1,7 +1,7 @@
 package com.mygithub.restexample.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mygithub.restexample.enetity.User;
+import com.mygithub.restexample.entity.User;
 import com.mygithub.restexample.service.UserService;
 
 import lombok.RequiredArgsConstructor;

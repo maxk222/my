@@ -1,4 +1,4 @@
-package com.mygithub.restexample.enetity;
+package com.mygithub.restexample.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

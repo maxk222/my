@@ -1,6 +1,6 @@
 package com.mygithub.restexample.service;
 
-import com.mygithub.restexample.enetity.User;
+import com.mygithub.restexample.entity.User;
 
 /**
  * @author RudeCrab

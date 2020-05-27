@@ -4,10 +4,9 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
-import com.mygithub.restexample.enetity.User;
+import com.mygithub.restexample.entity.User;
 import com.mygithub.restexample.service.UserService;
 
 import javax.validation.Valid;
@@ -23,7 +22,6 @@ import javax.validation.Valid;
 public class UserController {
 
 	private final UserService userService;
-	private final StringRedisTemplate redisTemplate;
 
     @ApiOperation("添加用户")
     @PostMapping("/addUser")
