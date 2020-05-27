@@ -1,6 +1,7 @@
 package com.mygithub.restexample.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,14 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class BaikeController {
 
-	private MongoTemplate mongoTemplate;
+	private final MongoTemplate mongoTemplate;
+	
+    @ApiOperation("获得单个百科")
+    @GetMapping("/findAll")
+    public List<Baike> findAll() throws Exception {
+    	List<Baike> list = mongoTemplate.findAll(Baike.class);
+        return list;
+    }
 
     @ApiOperation("获得单个百科")
     @GetMapping("/addBaike")
