@@ -19,7 +19,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@Api(tags = "用户接口")
+@Api(tags = "百科接口")
 @RequestMapping("baike")
 @RequiredArgsConstructor
 public class BaikeController {
